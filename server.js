@@ -27,4 +27,4 @@ app.get("/api", async (_, res) => {
 app.use(express.static(path.resolve(__dirname,"client","build")))
 app.get("*",(_,res)=>res.sendFile(path.resolve(__dirname,"client","build","index.html")))
 
-app.listen(8080, () => console.log("server started at 8080"));
+app.listen(5000, () => console.log("server started at 8080"));
